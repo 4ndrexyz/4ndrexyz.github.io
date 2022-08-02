@@ -1612,15 +1612,15 @@ button:focus {
 	}
 	.select .placeholder:after {
 		position: absolute;
-		top: 50%;
+		top: 60%;
 		right: 0.125rem;
 		transform: translateY(-50%);
 		font-family: "icomoon";
-		content: "\e940";
+		content: url("../icons/what i do/chevron-down.svg");
 		z-index: 10;
 	}
 	.select.is-open .placeholder:after {
-		content: "\e943";
+		content: url("../icons/what i do/chevron-up.svg");
 	}
 	.select.is-open ul {
 		display: block;
