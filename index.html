@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Hello!</title>
+		<!-- Meta Data -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="format-detection" content="address=no" />
+		<meta name="author" content="4ndrexyz" />
+		<meta name="description" content="Resume Website 4ndrexyz" />
+
+		<!-- Twitter data -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:site" content="@andrexyz_" />
+		<meta name="twitter:title" content="Resume 4ndrexyz" />
+		<meta name="twitter:description" content="Resume Website 4ndrexyz" />
+		<meta name="twitter:image" content="assets/images/social.html" />
+
+		<!-- Open Graph data -->
+		<meta property="og:title" content="Resume 4ndrexyz" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="4ndrexyz.github.io" />
+		<meta property="og:image" content="assets/images/social.html" />
+		<meta property="og:description" content="Resume Website 4ndrexyz" />
+		<meta property="og:site_name" content="4ndrexyz" />
+
+		<!-- Favicons -->
+		<link
+			rel="shortcut icon"
+			href="assets/images/favicons/favicon.ico"
+			type="image/x-icon"
+		/>
+		<style>
+			body {
+				background: url("assets/img/hero-login.webp") no-repeat center center
+					fixed;
+				top: 0;
+				left: 0;
+				background-size: cover;
+
+				/* Preserve aspet ratio */
+				min-width: 100%;
+				min-height: 100%;
+			}
+
+			/* CSS */
+			.center {
+				margin: 0;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				-ms-transform: translate(-50%, -50%);
+				transform: translate(-50%, -50%);
+			}
+			.button-57 {
+				letter-spacing: 1px;
+				background-color: rgba(255, 255, 255, 0.06);
+				border: 1px solid rgba(20, 20, 20, 0.1);
+				font-weight: bold;
+				width: 200px;
+				height: 50px;
+				position: relative;
+				overflow: hidden;
+				backdrop-filter: blur(5px);
+				color: #18181a;
+				display: inline-block;
+				font-size: 15px;
+				line-height: 15px;
+				padding: 18px 18px 17px;
+				text-decoration: none;
+				cursor: pointer;
+				background: transparent;
+				user-select: none;
+				-webkit-user-select: none;
+				touch-action: manipulation;
+			}
+
+			.button-57 span:first-child {
+				position: relative;
+				transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+				z-index: 10;
+			}
+
+			.button-57 span:last-child {
+				font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+					Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+					sans-serif;
+				color: white;
+				display: block;
+				position: absolute;
+				bottom: 0;
+				transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+				z-index: 100;
+				opacity: 0;
+				top: 65%;
+				left: 50%;
+				transform: translateY(225%) translateX(-50%);
+				height: 12px;
+				font-weight: bold;
+				line-height: 13px;
+			}
+
+			.button-57:after {
+				content: "";
+				position: absolute;
+				bottom: -50%;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-color: rgb(36, 36, 36);
+				transform-origin: bottom center;
+				transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
+				transform: skewY(9.3deg) scaleY(0);
+				z-index: 50;
+			}
+
+			.button-57:hover:after {
+				transform-origin: bottom center;
+				transform: skewY(9.3deg) scaleY(2);
+			}
+
+			.button-57:hover span:last-child {
+				transform: translateX(-50%) translateY(-100%);
+				opacity: 1;
+				transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+			}
+
+			.style4 {
+				font-weight: bold;
+				line-height: 13px;
+				text-align: center;
+				color: #2e2e2e;
+				font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+					Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+					sans-serif;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="center">
+			<script type="text/javascript">
+				//<![CDATA[
+				var h = new Date().getHours();
+				var m = new Date().getMinutes();
+				var s = new Date().getSeconds();
+				if (h >= 4 && h < 10)
+					document.writeln('<p class="style4">SELAMAT PAGI ☀️</p>');
+				if (h >= 10 && h < 15)
+					document.writeln('<p class="style4">SELAMAT SIANG ☁️</p>');
+				if (h >= 15 && h < 18)
+					document.writeln('<p class="style4">SELAMAT SORE ⛅️</p>');
+				if (h >= 18 || h < 4)
+					document.writeln('<p class="style4">SELAMAT MALAM ⭐️</p>');
+				//]]>
+			</script>
+			<a href="about.html">
+				<button class="button-57" role="button">
+					<span class="text">Klik Disini</span><span>Masuk !</span>
+				</button>
+			</a>
+		</div>
+	</body>
+</html>
